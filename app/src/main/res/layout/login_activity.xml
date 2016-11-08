@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/title_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login"
+            android:textSize="@dimen/title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#aaaaaa" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bg_login"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="手机号码:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="13765346587"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="用户ID:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="simonwang"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="登陆密码:"
+                android:textSize="@dimen/login" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="#ffffff"
+                android:hint="请输入"
+                android:textColor="#999999"
+                android:inputType="textPassword"
+                android:textSize="@dimen/login_e" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/gou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/img"
+            android:text="记住手机号码"
+            android:textColor="#888888"
+            android:textSize="@dimen/login" />
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="120dip"
+            android:layout_height="35dip"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_login_btn"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="登 陆"
+                android:textSize="16dip"
+                />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

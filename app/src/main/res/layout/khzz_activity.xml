@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/title_color" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="跨行快速汇款"
+            android:textSize="@dimen/title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#aaaaaa" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="#eeeeee"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bg_login"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/re_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="转出卡号:"
+                        android:textSize="@dimen/login" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:text="6214 6800 0875 2071 100"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="活期可用余额:"
+                        android:textSize="@dimen/login" />
+
+                    <TextView
+                        android:id="@+id/money_prefix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toLeftOf="@+id/ye"
+                        android:background="@null"
+                        android:text="¥ "
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <EditText
+                        android:id="@+id/ye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:cursorVisible="true"
+                        android:inputType="numberDecimal"
+                        android:minWidth="30dp"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="剩余转账额度:"
+                        android:textSize="@dimen/login" />
+
+                    <TextView
+                        android:id="@+id/money_prefix1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/zhuang_zhang_yu_e"
+                        android:background="#ffffff"
+                        android:text="¥ "
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <EditText
+                        android:id="@+id/zhuang_zhang_yu_e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:inputType="numberDecimal"
+                        android:minWidth="30dp"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bg_login"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/re_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="收款账号:"
+                        android:textSize="@dimen/login" />
+
+                    <EditText
+                        android:id="@+id/skzh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入账号"
+                        android:inputType="number"
+                        android:maxLength="23"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="收款银行名称:"
+                        android:textSize="@dimen/login" />
+
+                    <TextView
+                        android:id="@+id/skyh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:text="点击选择"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="收款人姓名:"
+                        android:textSize="@dimen/login" />
+
+                    <EditText
+                        android:id="@+id/sk_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入收款人姓名"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="添加到收款人名册:"
+                        android:textSize="@dimen/login" />
+
+                    <ImageView
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@mipmap/open" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bg_login"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/re_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="转账金额:"
+                        android:textSize="@dimen/login" />
+
+                    <EditText
+                        android:id="@+id/zzje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入金额"
+                        android:inputType="numberDecimal"
+                        android:minWidth="30dp"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="用途:"
+                        android:textSize="@dimen/login" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:gravity="right"
+                        android:hint="请输入用途"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:text="电子银行密码:"
+                        android:textSize="@dimen/login" />
+
+                    <EditText
+                        android:id="@+id/pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/login_e" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#999999" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/next" />
+    </RelativeLayout>
+
+</LinearLayout>

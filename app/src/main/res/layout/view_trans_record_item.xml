@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bg_login"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="收款账号:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:id="@+id/sk_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="6217002020024879452"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="收款行名:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:id="@+id/sk_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="中国工商银行"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="收款人:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:id="@+id/sk_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="王天行"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_4"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="金额:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:id="@+id/sk_je"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="1,000,00.00"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_5"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="日期:"
+                android:textSize="@dimen/login" />
+
+            <TextView
+                android:id="@+id/sk_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:text="2015-06-03"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_6"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="状态:"
+                android:textSize="@dimen/login" />
+
+            <EditText
+                android:minWidth="50dp"
+                android:id="@+id/deal_state"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:textColor="#999999"
+                android:textSize="@dimen/login_e" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
