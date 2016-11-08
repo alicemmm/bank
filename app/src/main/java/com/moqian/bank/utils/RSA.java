@@ -30,7 +30,7 @@ public class RSA {
     private static final String PUBLIC_KEY = "RSAPublicKey";
 
     //私钥
-    private static final String PRIVATE_KEY = "RSAPrivateKey";
+//    private static final String PRIVATE_KEY = "";
 
     /**
      * 初始化密钥对
@@ -54,7 +54,7 @@ public class RSA {
             //将密钥存储在map中
 
             keyMap.put(PUBLIC_KEY, publicKey);
-            keyMap.put(PRIVATE_KEY, privateKey);
+//            keyMap.put(PRIVATE_KEY, privateKey);
         }catch (NoSuchAlgorithmException e){
 
         }
@@ -162,10 +162,10 @@ public class RSA {
      * @param keyMap 密钥map
      * @return byte[] 私钥
      */
-    public static byte[] getPrivateKey(Map<String, Object> keyMap) {
-        Key key = (Key) keyMap.get(PRIVATE_KEY);
-        return key.getEncoded();
-    }
+//    public static byte[] getPrivateKey(Map<String, Object> keyMap) {
+//        Key key = (Key) keyMap.get(PRIVATE_KEY);
+//        return key.getEncoded();
+//    }
 
     /**
      * 取得公钥
