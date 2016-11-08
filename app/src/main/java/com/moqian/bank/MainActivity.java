@@ -13,9 +13,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        CommonUtils.testRAS("1");
-
         Handler handler = new Handler();
         Runnable updateThread = new Runnable() {
             public void run() {

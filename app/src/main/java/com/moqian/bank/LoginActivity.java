@@ -33,9 +33,6 @@ public class LoginActivity extends Activity implements OnClickListener {
         login = (LinearLayout) findViewById(R.id.login);
         login.setOnClickListener(this);
         back.setOnClickListener(this);
-
-        CommonUtils.testRSA("1");
-
     }
 
     @Override
