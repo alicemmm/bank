@@ -18,12 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/sms_receiver"
+        android:background="@drawable/message"
         android:maxWidth="250dip"
         android:minWidth="34.5dip"
         android:paddingTop="10dp"
-        android:paddingLeft="26dip"
-        android:paddingRight="3dip"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
         android:textColor="#f0000000"
         android:textSize="14sp" />
 

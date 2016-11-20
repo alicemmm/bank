@@ -46,7 +46,7 @@ public class resultActivity extends Activity {
 			String month = pwdString.substring(0, 2);
 			String dayString = pwdString.substring(2,4);
 			String hour = pwdString.substring(4,6);
-			date = String.format("Ԥ��%s-%s %s:59ǰ����", month,dayString,hour);
+			date = String.format("预计%s-%s %s:59到达", month,dayString,hour);
 			
 		}
 		time.setText(date);
